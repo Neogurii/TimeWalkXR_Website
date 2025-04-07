@@ -31,11 +31,14 @@
 <body>
     <header class="margin" style="display: flex; justify-content: space-between; align-items: center;">
         <a class="logo_mini" href="index.html"></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://cal.com/timewalkxr/30min">Prenez rendez-vous &#10140;</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://cal.com/timewalkxr/30min" class="fr">Prenez rendez-vous &#10140;</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://cal.com/timewalkxr/30min" class="eng">Make an appointement &#10140;</a>
     </header>
     <!------------------------------------------------ Home ------------------------------------------------>
-    <h1 class="text_gradient w70-70-100" style="text-align: center;">VOYAGEZ DANS LE TEMPS ET À TRAVERS L’HISTOIRE</h1>
-    <a class="btn btn_blue eng" style="margin-bottom: 0rem;">Démo bientôt disponible</a>
+    <h1 class="text_gradient w70-70-100 fr" style="text-align: center;">VOYAGEZ DANS LE TEMPS ET À TRAVERS L’HISTOIRE</h1>
+    <h1 class="text_gradient w70-70-100 eng" style="text-align: center;">TRAVEL BACK IN TIME AND HISTORY</h1>
+    <a class="btn btn_blue fr" style="margin-bottom: 0rem;">Démo bientôt disponible</a>
+    <a class="btn btn_blue eng" style="margin-bottom: 0rem;">Demo soon available</a>
 
 
 
@@ -212,11 +215,20 @@
             <div style="display: flex; flex-direction: column; align-items: center;" class="w20-20-100">
                 <a class="logo" style="margin-bottom: 1rem;"></a>
                 <a href="Mentions.html" class="footer_text" style="color: white; margin-bottom: 1.5rem;">Mentions légales</a>
-                <a href="Confidentialites.html" class="footer_text" style="color: white; margin-bottom: 1.5rem;">Confidentialités</a>
-                <a href="" class="footer_text text center"
+                <a href="Mentions.html" class="footer_text" style="color: white; margin-bottom: 1.5rem;">Legal notice</a>
+                <a href="Confidentialites.html" class="footer_text fr" style="color: white; margin-bottom: 1.5rem;">Confidentialités</a>
+                <a href="Confidentialites.html" class="footer_text eng" style="color: white; margin-bottom: 1.5rem;">Privacy</a>
+                <a href="" id="btn_fr" class="footer_text text center eng"
                     style="width: 100%; background-color: white; padding: 0.5rem 0; display: flex; align-items: center; text-decoration: none;"><img
                         src="./assets/Icons/World.svg" style="height: 70%;">
                     <p class="text_gradient_02" style="margin: 0 0.5rem;"> English </p><img src="./assets/Icons/V.svg"
+                        style="height: 30%;">
+                </a>
+
+                <a href="" id="btn_eng" class="footer_text text center fr"
+                    style="width: 100%; background-color: white; padding: 0.5rem 0; display: flex; align-items: center; text-decoration: none;"><img
+                        src="./assets/Icons/World.svg" style="height: 70%;">
+                    <p class="text_gradient_02" style="margin: 0 0.5rem;"> Français </p><img src="./assets/Icons/V.svg"
                         style="height: 30%;">
                 </a>
             </div>
@@ -249,3 +261,6 @@
         <h5 style="font-size: 0.5rem; font-weight: 400; margin-bottom: 1rem;">Copyrights @TimeWalkXR_2025</h5>
     </footer>
 </body>
+
+<!--JS links-->
+<script type="module" src="./script.js" defer></script>
