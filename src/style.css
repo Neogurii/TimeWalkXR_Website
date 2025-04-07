@@ -97,7 +97,6 @@ section {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 0;
 }
 
 .service_case {
@@ -111,7 +110,6 @@ section {
 
 .service_case_left {
     justify-content: flex-end;
-    margin-top: 5rem;
 }
 
 .service_image {
@@ -149,23 +147,23 @@ section {
     justify-content: space-between;
 }
 
-.power_case,
-.about_case {
+.power_case {
+    width: 20%;
     min-height: 20rem;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 
     color: white;
     padding: 3rem 0;
 }
 
-.power_case {
-    width: 20%;
-}
-
 .about_case {
     width: 45%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+
+    color: white;
 }
 
 .power_image,
@@ -174,6 +172,11 @@ section {
     background-position: left;
     width: 100%;
     height: 100%;
+}
+
+.power_image{
+    height: 15rem;
+    margin-bottom: 1rem;
 }
 
 .power_image_01 {
