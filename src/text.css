@@ -1,0 +1,68 @@
+* {
+    font-family: "Rubik", sans-serif;
+    font-size: calc(15px + 0.390625vw);
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.7rem;
+}
+
+.text_gradient{
+    background: linear-gradient(90deg, rgba(105, 234, 203, 1) 0%, rgba(103, 170, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text_gradient_02{
+    background: linear-gradient(180deg, rgba(0, 137, 232, 1) 0%, rgba(0, 68, 177, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h5{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+h6{
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+p{
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+b{
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.btn{
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.footer_text{
+    font-weight: 400;
+    font-size: 0.7rem;
+}

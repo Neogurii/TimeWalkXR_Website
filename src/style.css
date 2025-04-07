@@ -1,0 +1,285 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* Ajoute un défilement fluide global */
+}
+
+::selection {
+    background: #BE0426;
+    color: #F2F2F2;
+}
+
+html,
+body {
+    margin: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131334;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3rem;
+    top: 0;
+    position: absolute;
+
+    z-index: 10;
+}
+
+header a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #F2F2F2;
+}
+
+.logo {
+    background-image: url("./assets/Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 10rem;
+    height: 3rem;
+    display: block;
+}
+
+.margin {
+    width: 70vw;
+}
+
+h1 {
+    margin: 15rem 0 5rem 0;
+}
+
+.btn {
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn_blue {
+    background: linear-gradient(180deg, rgba(0, 137, 232, 1) 0%, rgba(0, 68, 177, 1) 100%);
+    color: white;
+}
+
+.btn_white {
+    background-color: white;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.service_case {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+
+    color: white;
+}
+
+.service_case_left {
+    justify-content: flex-end;
+    margin-top: 5rem;
+}
+
+.service_image {
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 40%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+}
+
+.service_image_01 {
+    background-image: url("./assets/Image.png");
+    background-size: cover;
+    right: 0;
+    background-position: center;
+}
+
+.service_image_02 {
+    background-image: url("./assets/Image.png");
+    background-size: cover;
+    left: 0;
+    background-position: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.power {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.power_case,
+.about_case {
+    min-height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    color: white;
+    padding: 3rem 0;
+}
+
+.power_case {
+    width: 20%;
+}
+
+.about_case {
+    width: 45%;
+}
+
+.power_image,
+.about_image {
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    height: 100%;
+}
+
+.power_image_01 {
+    background-image: url("./assets/Image.png");
+    background-size: cover;
+    top: 0;
+    background-position: center;
+}
+
+.about_image_01 {
+    background-image: url("./assets/Image.png");
+    background-size: cover;
+    top: 0;
+    background-position: center;
+}
+
+
+.half_desktop {
+    width: 50%;
+}
+
+.padding-phone {
+    padding-top: 0;
+}
+
+.w70-70-100 {
+    width: 70%;
+}
+
+.w30-60-100 {
+    width: 30%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient {
+    background: linear-gradient(180deg, rgba(0, 137, 232, 1) 0%, rgba(0, 68, 177, 1) 100%);
+    color: white;
+}
+
+/* ------------------- TABLET + PHONE ------------------- */
+@media (max-width: 1023px) {
+    .service_case {
+        margin-top: 2rem;
+        padding: 0 0 2rem 0;
+        border-radius: 0;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .service_case .btn {
+        padding: 1rem 2rem;
+    }
+
+    .service_case_left {
+        flex-direction: column;
+    }
+
+    .power_case {
+        width: 45%;
+    }
+}
+
+/* ------------------- TABLET ------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .w30-60-100 {
+        width: calc(55% + 3rem);
+    }
+}
+
+/* ------------------- PHONE ------------------- */
+@media (max-width: 768px) {
+    .half_desktop {
+        width: 100%;
+    }
+
+    .padding-phone {
+        padding-top: 2rem;
+    }
+
+    .w70-70-100 {
+        width: 100%;
+    }
+
+    .w30-60-100 {
+        width: 100%;
+    }
+
+    .service_image {
+        width: 100%;
+        height: 15rem;
+
+        position: relative;
+        border-radius: 0;
+    }
+
+    .power_case {
+        width: 100%;
+    }
+
+    .logo {
+        width: 5rem;
+        height: 1.5rem;
+    }
+}
