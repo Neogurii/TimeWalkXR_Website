@@ -38,8 +38,8 @@ h3{
 }
 
 h5{
-    font-weight: 400;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 h6{
@@ -70,4 +70,15 @@ b{
 .footer_text{
     font-weight: 400;
     font-size: 0.7rem;
+}
+
+::placeholder{
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: rgb(111, 111, 111);
+}
+
+input{
+    font-weight: 400;
+    font-size: 0.8rem;
 }
