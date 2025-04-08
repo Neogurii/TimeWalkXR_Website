@@ -116,7 +116,7 @@ section {
 .service_image {
     background-repeat: no-repeat;
     background-position: left;
-    width: 40%;
+    width: 45%;
     height: 100%;
 
     position: absolute;
@@ -124,16 +124,41 @@ section {
 }
 
 .service_image_01 {
-    background-image: url("./assets/Image.png");
+    background-image: url("./assets/Images/AR_Image.png");
     background-size: cover;
     right: 0;
+    border-radius: 15px;
     background-position: center;
 }
 
 .service_image_02 {
-    background-image: url("./assets/Image.png");
+    background-image: url("./assets/Images/Mock_UP_01.png");
+    background-size: contain;
+    left: 0;
+    background-position: center;
+}
+
+.service_image_03 {
+    background-image: url("./assets/Images/IA.png");
+    background-size: cover;
+    right: 0;
+    border-radius: 15px;
+    background-position: center;
+}
+
+.service_image_04 {
+    background-image: url("./assets/Images/Occlusion_Skin.png");
     background-size: cover;
     left: 0;
+    border-radius: 15px;
+    background-position: center;
+}
+
+.service_image_05 {
+    background-image: url("./assets/Images/VR.png");
+    background-size: cover;
+    left: 0;
+    border-radius: 15px;
     background-position: center;
 }
 
@@ -173,27 +198,55 @@ section {
     background-position: left;
     width: 100%;
     height: 100%;
-}
-
-.power_image, .about_image{
     height: 15rem;
     margin-bottom: 1rem;
 }
 
+.power_image{
+    border-radius: 15px;
+}
+
 .power_image_01 {
-    background-image: url("./assets/Image.png");
+    background-image: url("./assets/Images/Programming.png");
+    background-size: cover;
+    top: 0;
+    background-position: center;
+}
+
+.power_image_02 {
+    background-image: url("./assets/Images/VPS.png");
+    background-size: cover;
+    top: 0;
+    background-position: center;
+}
+
+.power_image_03 {
+    background-image: url("./assets/Images/3D.png");
+    background-size: cover;
+    top: 0;
+    background-position: center;
+}
+
+.power_image_04 {
+    background-image: url("./assets/Images/Occlusion.png");
     background-size: cover;
     top: 0;
     background-position: center;
 }
 
 .about_image_01 {
-    background-image: url("./assets/Image.png");
+    background-image: url("./assets/Images/Jojo.jpeg");
     background-size: cover;
     top: 0;
-    background-position: center;
+    background-position: center 25%;
 }
 
+.about_image_02 {
+    background-image: url("./assets/Images/Isaac.jpg");
+    background-size: cover;
+    top: 0;
+    background-position: left;
+}
 
 .half_desktop {
     width: 50%;
@@ -250,6 +303,10 @@ section {
     margin-bottom: 3rem;
 }
 
+.aligncenter, .aligncenter-end{
+    align-items: center;
+}
+
 /* ------------------- TABLET + PHONE ------------------- */
 @media (max-width: 1023px) {
     .service_case {
@@ -270,6 +327,14 @@ section {
 
     .power_case {
         width: 45%;
+    }
+
+    .aligncenter{
+        align-items: flex-start;
+    }
+
+    .aligncenter-end{
+        align-items: flex-end;
     }
 }
 
