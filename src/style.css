@@ -67,7 +67,6 @@ header a {
 }
 
 
-
 .margin {
     width: 70vw;
 }
@@ -208,8 +207,6 @@ section {
     width: 70%;
 }
 
-
-
 .w30-60-100 {
     width: 30%;
 }
@@ -237,13 +234,29 @@ section {
     display: block;
 }
 
+.top5{
+    margin-top: 5rem;
+}
+
+.bottom5{
+    margin-bottom: 5rem;
+}
+
+.top3{
+    margin-top: 3rem;
+}
+
+.bottom3{
+    margin-bottom: 3rem;
+}
+
 /* ------------------- TABLET + PHONE ------------------- */
 @media (max-width: 1023px) {
     .service_case {
         margin-top: 2rem;
         padding: 0 0 2rem 0;
         border-radius: 0;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: column-reverse;
     }
 
@@ -262,6 +275,10 @@ section {
 
 /* ------------------- TABLET ------------------- */
 @media (min-width: 767px) and (max-width: 1023px) {
+    .margin{
+        width: 80%;
+    }
+    
     .w30-60-100 {
         width: calc(55% + 3rem);
     }
@@ -273,12 +290,43 @@ section {
     .phone-none{
         display: block;
     }
+
+    .top5{
+        margin-top: 4rem;
+    }
+    
+    .bottom5{
+        margin-bottom: 4rem;
+    }
+
+    .top3{
+        margin-top: 1rem;
+    }
+
+    .bottom3{
+        margin-bottom: 1rem;
+    }
+
+    #power_case > :nth-child(1), #power_case > :nth-child(2){
+        padding: 2rem 0 1rem 0;
+    }
+
+    #power_case > :nth-child(3), #power_case > :nth-child(4){
+        padding: 1rem 0 2rem 0;
+    }
 }
 
 /* ------------------- PHONE ------------------- */
 @media (max-width: 767px) {
+    .margin{
+        width: 85%;
+    }
+
     .half_desktop {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .padding-phone {
@@ -297,7 +345,15 @@ section {
         border-radius: 0;
     }
 
+    .service_case{
+        align-items: center;
+    }
+
     .power_case {
+        width: 100%;
+    }
+
+    .about_case{
         width: 100%;
     }
 
@@ -318,5 +374,41 @@ section {
     .logo_mini {
         background-image: url("./assets/logo_mini.png");
         width: 3rem;
+    }
+
+    .top5{
+        margin-top: 2.5rem;
+    }
+    
+    .bottom5{
+        margin-bottom: 2.5rem;
+    }
+
+    .top3{
+        margin-top: 0rem;
+    }
+
+    .bottom3{
+        margin-bottom: 0rem;
+    }
+
+    #power_case > :nth-child(1), #power_case > :nth-child(2){
+        padding: 1rem 0 0rem 0;
+    }
+
+    #power_case > :nth-child(3), #power_case > :nth-child(4){
+        padding: 0rem 0 1rem 0;
+    }
+
+    .half_desktop a{
+        width: 10rem;
+        text-align: center;
+    }
+    .half_desktop h3{
+        width: 100%;
+    }
+
+    h1 {
+        margin: 10rem 0 5rem 0;
     }
 }
